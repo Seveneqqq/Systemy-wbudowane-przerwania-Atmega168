@@ -1,0 +1,17 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000000000" stepsPS="1" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega168-1" mainComp="false" Show_id="true" Show_Val="false" Pos="876,516" rotation="0" hflip="1" vflip="1" label="mega168-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" varList="EICRA/0x0069/uint8,EICRA/0x0069/uint8,EICRA/0x0069/uint8,EICRA/0x0069/uint8,EICRA/0x0069/uint8,EICRA/0x0069/uint8,EICRA/0x0069/uint8,EICRA/0x0069/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,/---/uint8,ADMUX/0x007C/uint8,ASSR/0x00B6/uint8,CLKPR/0x0061/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8,DDRB/0x0024/uint8" Frequency="16 MHz" Program="../przerwania sw/main.hex" Auto_Load="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
+
+<item itemtype="Ground" CircId="Ground-7" mainComp="false" Show_id="false" Show_Val="false" Pos="1032,656" rotation="0" hflip="1" vflip="1" label="Ground-7" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Resistor" CircId="Resistor-10" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="944,596" rotation="0" hflip="1" vflip="1" label="Resistor-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Led" CircId="Led-12" mainComp="false" Show_id="false" Show_Val="false" Pos="996,596" rotation="0" hflip="1" vflip="1" label="Led-12" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Connector" uid="connector-28" startpinid="Resistor-10-lPin" endpinid="mega168-1-PORTB5" pointList="928,596,916,596" />
+
+<item itemtype="Connector" uid="connector-29" startpinid="Led-12-lPin" endpinid="Resistor-10-rPin" pointList="980,596,960,596" />
+
+<item itemtype="Connector" uid="connector-30" startpinid="Led-12-rPin" endpinid="Ground-7-Gnd" pointList="1012,596,1044,596,1044,612,1012,612,1012,640,1032,640" />
+
+</circuit>
